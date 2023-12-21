@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="C:\Users\ntyle\OneDrive\Desktop\Devslopes\MyTube\styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>HuntTube</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>HuntTube</h2>
+        <ul>
+          <li>
+            <a
+              href="C:\Users\ntyle\OneDrive\Desktop\Devslopes\MyTube\index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="C:\Users\ntyle\OneDrive\Desktop\Devslopes\MyTube\deer\deer.html"
+              >Deer</a
+            >
+          </li>
+          <li>
+            <a
+              href="C:\Users\ntyle\OneDrive\Desktop\Devslopes\MyTube\turkey\turkey.html"
+              >Turkey</a
+            >
+          </li>
+          <li>
+            <a
+              href="C:\Users\ntyle\OneDrive\Desktop\Devslopes\MyTube\smallGame\smallGame.html"
+              >Small Game</a
+            >
+          </li>
+          <li>
+            <a
+              href="C:\Users\ntyle\OneDrive\Desktop\Devslopes\MyTube\upload\upload.html"
+              >Upload Video</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="page-head">Upload Video</h1>
+    <hr />
+    <form>
+      <div>
+        <label for="title">Video Title</label><br />
+        <input type="text" id="title" name="title" size="40" />
+      </div>
+
+      <div>
+        <label for="desription">Description</label><br />
+        <textarea id="desription" name="desription" rows="8" cols="40"></textarea>
+      </div>
+
+      <div>
+        <label for="video">Video</label><br />
+        <input type="file" accept="video/mp4,video/x-m4v,video/*" name="video" />
+      </div>
+
+      <div>
+        <label for="collection">Collection</label><br />
+        <select id="collection" name="collection">
+          <option value="">Deer Hunting</option>
+          <option value="1">Turkey Hunting</option>
+          <option value="2">Small Game Hunting</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="radio" name="public" id="public" value="public" />
+        <label for="public">Public</label>
+        <input type="radio" name="private" id="private" value="private" />
+        <label for="private">Private</label>
+      </div>
+
+      <input type="submit" value="Upload Video" />
+    </form>
+  </body>
+</html>
